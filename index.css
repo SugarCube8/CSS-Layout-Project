@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 1);
+}
+.navbar{
+    background-color: black;
+    display: flex;
+    width: 100%;
+    border-bottom: 6px solid rgb(137, 98, 0);
+    position: fixed;
+}
+
+@media screen and (max-width: 375px) {
+    .navbar{
+    background-color: red;
+    display: block;
+    }
+}
+.links{
+    display: flex;
+    flex-direction: row;
+      justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+}
+
+.links li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.links li a:hover{
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    background-color: goldenrod;
+}
+
+    .links li{
+        text-decoration: none;
+        list-style: none;
+        padding: 25px;
+        text-transform: uppercase;
+      
+    }
+
+.mainhead{
+    background-image: url("./images/freshly-baked-pizza1.jpg");
+    height: 500px;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+    display: flex;
+    padding: 40px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-note{
+    padding: 1em;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+
+}
+
+/* .sticky{
+    position: sticky;
+    display: flex;
+    background-color: goldenrod;
+    color: white;
+    width: 10em;
+    border-radius: 5%;
+    align-items: center;
+    padding: 2em;
+    border: .2em solid white;
+    text-align: center;
+    font-weight: 800;
+    font-size: larger;
+} */
+.pizzacard{
+    width: 90%;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin:  auto;
+}
+
+.btnorder{
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    border-radius: .5em;
+    padding: 10px;
+    width: 80%;
+}
+
+.btnorder:hover{
+    background-color: gold;
+    padding: 14px;
+}
+h3{
+    font-size: 2em;
+}
+
+.cards{
+    background-color: white;
+    margin: 25px;
+    padding: 30px;
+    align-items: center;
+}
+.picscard{
+    width: 100%;
+}
+
+.prices{
+    color: red;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 1em;
+}
+.description{
+    padding: 1em;
+    kerning: auto;
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+}
+
+.copyright a{
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.footnote{
+    background-color: grey;
+    margin-top: 2em;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    width: 100%;
+    color: black;
+    }
+
+    .footnote a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
